@@ -1,0 +1,219 @@
+
+.main{
+    .product-nav{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        .product-item{
+            width: 34%;
+ 
+            a{
+                text-decoration: none;
+                color: #000;
+                font-size: 30px;
+                line-height: 43px;
+                display: block;
+                padding: 26px 0;
+                border: 1px solid #DCDCDC;
+                
+            }
+            img{
+                display: inline-block;
+                height: 44px;
+                vertical-align: middle;
+                
+            }
+
+        }
+
+        
+    }
+
+    @include tablet{
+        .product-nav{
+            .product-item{
+                a{
+                    font-size: $font-size-xl;
+                }
+
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+        }
+       
+        
+      
+    }
+
+
+    .product-banner{
+        display: flex;
+
+        .pic-group{
+            height: 304px;
+            width: 50%;
+
+        }
+
+        .pic-1{
+            background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week4/banner-1.png) no-repeat center/cover;
+        }
+
+        .pic-2{
+            background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week4/banner-2.png) no-repeat center/cover ;  
+        }
+
+
+    }
+
+
+    .product{
+        text-align: center;
+        color: #000;
+        padding-top: 80px;
+        .title{
+            font-size: 42px;
+            margin-bottom: 40px;
+
+        }
+
+        
+
+        span{
+            display: block;
+            font-size: 32px;
+        }
+
+        @include tablet{
+            .title{
+                font-size: 32px;
+                span{
+                    font-size: $font-size-lg;
+                }
+            }
+           
+        }
+
+        .product-group{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .product-list{
+            margin-bottom: 104px;
+
+            width: 22%;
+           img{
+               width: 168.89px;
+               height: 130px;
+           }
+
+           
+            
+
+            .list-text{
+                display: flex;
+                justify-content: space-between;
+                 font-size: $font-size-lg;
+
+                 .list-price{
+                     color: #aa0601;
+                     font-weight:700;
+                 }
+            }
+
+            .product-color{
+                display: flex;
+
+                .box{
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 20%;
+                    margin-right: 4px;
+
+                }
+
+                .box-gray{
+                    background-color: #5F3E2D;
+                }
+
+                .box-brown{
+                    background-color: #B75929;
+
+                }
+            }
+
+
+           
+
+        }
+
+        @include tablet{
+
+
+            .product-group{
+                display: flex;
+                justify-content: space-around;
+                
+            }
+            .product-list{
+                width: 40%;
+                img{
+                    width: 330px;
+                }
+            }
+        }
+
+
+        
+
+
+    }
+}
+
+nav{
+    display: flex;
+}
+
+.pagination{
+    display: flex;
+    margin: 0 auto;
+    font-size: 19px;
+    margin-bottom: 160px;
+
+    .page-item.active{
+        
+            background-color: #000;
+            .page-link{
+                color: #fff;
+                
+            }
+        
+    }
+
+   
+    .page-item{
+        border: 1px solid #555;
+      
+      
+        .page-link{
+            display: block;
+            color: #555;
+            text-decoration: none;
+            padding: 12px 16px;
+
+            &:hover{
+                color: #fff;
+                background-color: #000;        
+            }
+            
+            
+            
+        }
+    }
+
+}
